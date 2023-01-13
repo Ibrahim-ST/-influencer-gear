@@ -20,7 +20,7 @@
 
  }
 
- .menu-items {
+.nav-menu .menu-items {
      display: flex;
      gap: 34px;
  }
@@ -28,3 +28,70 @@
  .menu-items li {
      list-style: none;
  }
+
+ /*----------
+    // banner styles //
+-------------*/
+.banner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 150px;
+
+
+}
+.banner-info{
+    display: flex;
+    flex-direction: column;
+}
+.banner-info .banner-title{
+    font-size: 45px;
+    margin: 0;
+}
+.banner-info .banner-description{
+    font-size: 16px;
+}
+.banner-image{
+    background-image: url('/assets/images/Circle\ design.svg');
+    background-repeat: no-repeat;
+}
+.banner-button button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+
+/*----------------
+    // sponsor section styles //
+------------------*/
+
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:576px){
+    .sponsors{
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
