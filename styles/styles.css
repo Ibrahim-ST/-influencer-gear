@@ -56,7 +56,7 @@
  }
 
  .banner-image {
-     background-image: url('/assets/images/Circle.svg');
+     background-image: url('../assets/images/Circle.svg');
      background-repeat: no-repeat;
  }
 
