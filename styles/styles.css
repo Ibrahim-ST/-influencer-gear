@@ -20,7 +20,7 @@
 
  }
 
-.nav-menu .menu-items {
+ .nav-menu .menu-items {
      display: flex;
      gap: 34px;
  }
@@ -32,66 +32,189 @@
  /*----------
     // banner styles //
 -------------*/
-.banner-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-column-gap: 150px;
+ .banner-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+     grid-column-gap: 150px;
 
 
-}
-.banner-info{
-    display: flex;
-    flex-direction: column;
-}
-.banner-info .banner-title{
-    font-size: 45px;
-    margin: 0;
-}
-.banner-info .banner-description{
-    font-size: 16px;
-}
-.banner-image{
-    background-image: url('/assets/images/Circle\ design.svg');
-    background-repeat: no-repeat;
-}
-.banner-button button{
-    background-color: #E02C6D;
-    padding: 10px 24px;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    font-size: 16px;
-}
+ }
+
+ .banner-info {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .banner-info .banner-title {
+     font-size: 45px;
+     margin: 0;
+ }
+
+ .banner-info .banner-description {
+     font-size: 16px;
+ }
+
+ .banner-image {
+     background-image: url('/assets/images/Circle\ design.svg');
+     background-repeat: no-repeat;
+ }
+
+ .banner-button button {
+     background-color: #E02C6D;
+     padding: 10px 24px;
+     border: none;
+     border-radius: 20px;
+     color: white;
+     font-size: 16px;
+ }
 
 
-/*----------------
+ /*----------------
     // sponsor section styles //
 ------------------*/
 
-.sponsors{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    justify-items: center;
-    justify-content: center;
+ .sponsors {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     justify-items: center;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+     margin: 0 100px;
+     border-top: 1px solid rgba(128, 128, 128, 0.5);
+     border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+     padding: 15px;
+ }
+
+
+ /*----------------------
+    // popular collections styles //
+------------------------ */
+ .collection-container {
+     max-width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 100px;
+ }
+
+ .collection-header {
+     margin-top: 0;
+     margin-bottom: 30px;
+     font-size: 28px;
+ }
+
+ .collections {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 20px;
+     grid-row-gap: 15px;
+
+ }
+
+ .collection {
+     padding: 15px;
+     border-radius: 5px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ }
+
+ .collection .product-price {
+     font-size: 24px;
+     margin: 0;
+ }
+
+ .rating {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     margin: 0;
+ }
+
+ .fa-star {
+     width: 15px;
+     height: 15px;
+ }
+
+ .fa-star.filled {
+     color: #FB8200;
+ }
+
+ .fa-star-half-stroke {
+     color: #FB8200;
+ }
+
+ .rating p {
+     color: #5E6366;
+
+ }
+
+ .delivery-info p {
+     color: #787885;
+     font-size: 14px;
+     margin: 0;
+ }
+
+ .see {
+     display: flex;
+     justify-content: end;
+     align-items: end;
+     margin-right: 100px;
+ }
+
+ .see-more {
+     color: rgba(224, 44, 109, 0.87);
+     font-size: 16px;
+     border: none;
+     background-color: white;
+     font-weight: 700;
+     margin-top: 25px;
+
+ }
+
+ /*--------------------
+    // featured-products styles  //
+----------------------*/
+ .featured-products {
+     /* max-width: 100%;  */
+     display: flex;
+     gap: 50px;
+     flex-direction: row;
+     width: 100%;
+     height: 400px;
+     /* align-items: center;     */
+     
+     /* padding: 100px 125px;  */
+ }
+.featured-image > img{
+    width: 100%;
+}
+ .featured-info>button {
+     background-color: #E02C6D;
+     color: white;
+     border: none;
+     padding: 10px 15px;
+ }
+
+ /* Footer styles  */
+ footer {
+    background-color: #0A0826;
+    padding: 50px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
-    margin: 0 100px;
-}
+ }
+ footer h3,p{
+    margin: 3px;
+
+ }
 
 
 
+ @media only screen and (max-width:576px) {
+     .sponsors {
 
-
-
-
-
-
-
-
-@media only screen and (max-width:576px){
-    .sponsors{
-        
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+         grid-template-columns: repeat(3, 1fr);
+     }
+ }
